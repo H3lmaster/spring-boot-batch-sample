@@ -5,15 +5,18 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import com.ef.parser.utils.Duration;
 import com.ef.parser.utils.Utils;
 
-class DurationTest {
+@RunWith(SpringRunner.class)
+public class DurationTest {
 
 	@Test
-	void dailyTest() {
+	public void dailyTest() {
 		
 		String startDateStr = "2017-01-01.00:00:00";
 		
@@ -33,7 +36,7 @@ class DurationTest {
 	}
 	
 	@Test
-	void hourlyTest() {
+	public void hourlyTest() {
 		
 		String startDateStr = "2017-01-01.00:00:00";
 		
